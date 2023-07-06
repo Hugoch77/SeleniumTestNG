@@ -17,62 +17,48 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class GoogleTest extends BeforeAfterTest {
-	
-  @Test
-  @Parameters({"URL"})
-  public void f(String URL) throws InterruptedException {
-	//naviagte to URL
+
+	@Test
+	@Parameters({ "URL" })
+	public void f(String URL) throws InterruptedException {
+		// Navigate to URL
 		driver.get(URL);
-		
-		//Maxzimize 
+
+		// Maximize
 		driver.manage().window().maximize();
-		
-		WebElement Alerts_Link=driver.findElement(By.linkText("JavaScript Alerts"));
+
+		WebElement Alerts_Link = driver.findElement(By.linkText("JavaScript Alerts"));
 		Alerts_Link.click();
-		
-		WebElement Button_JS_Alert =driver.findElement(By.xpath("//li[1]//button[1]"));
+
+		WebElement Button_JS_Alert = driver.findElement(By.xpath("//li[1]//button[1]"));
 		Button_JS_Alert.click();
 		Thread.sleep(3000);
-		
+
 		// Handle alert
-		driver.switchTo().alert().accept(); //dismmiss
+		driver.switchTo().alert().accept(); // Dismiss
 //		driver.switchTo().alert().dismiss();
-		
-		//comparing the Results
-		String Expected="You successfuly clicked an alert";
-		
-		String Actual=driver.findElement(By.id("result")).getText();
-		
-		if(Expected.equalsIgnoreCase(Actual)){    
+
+		// comparing the Results
+		String Expected = "You successfuly clicked an alert";
+
+		String Actual = driver.findElement(By.id("result")).getText();
+
+		if (Expected.equalsIgnoreCase(Actual)) {
 			System.out.println("PASS: The Results are matching");
-		}
-		else{
+		} else {
 			System.out.println("Fail: Your results are not matching");
 		}
-		
-		
-		
-		//BACK
+
+		// BACK
 		driver.navigate().back();
 		Thread.sleep(3000);
-		//Forward
+		// Forward
 		driver.navigate().forward();
 		Thread.sleep(3000);
-		//Reload
+		// Reload
 		driver.navigate().refresh();
 		Thread.sleep(3000);
-		 
-	 
-  }
- 
 
-  
-
- 
-
-
-
-
-
+	}
 
 }

@@ -13,5 +13,7 @@ public static void main(String[] args) {
 	Assert.assertEquals(driver.getTitle(), "Google");
 	driver.close();
 	driver.quit();
+	
+	System.out.println("Test passed");
 }
 }

@@ -15,7 +15,7 @@ public class Testing_Google2 extends BeforeAfterTest {
 	  Page_obj page= new Page_obj();
 	  
 	  //navigate
-	  utils.Naigate_to_URL(driver, "https://www.google.co.in/");
+	  utils.Navigate_to_URL(driver, "https://www.google.co.in/");
 	  
 	  
 	  //Assert

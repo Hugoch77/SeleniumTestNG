@@ -13,7 +13,7 @@ public class BeforeAfter {
 
   @AfterSuite
   public void afterSuite() {
-	  System.out.println("After Suite");
+	  System.out.println("After Suite"); //Notes
   }
 
 }

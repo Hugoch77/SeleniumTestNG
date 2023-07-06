@@ -12,17 +12,17 @@ public class Utilities {
 	}
 	
 	public void Assert_My_Title(WebDriver driver_instance, String Expected){
-//		Assert.assertTrue(false);
+//		Assert.assertTrue(false, "Message");
 //		Assert.assertEquals("A", "B");
 		
 		String Actual=driver_instance.getTitle();
 		
 	//	SoftAssert testasset= new SoftAssert();
-		Assert.assertEquals(Expected, Actual);
+		Assert.assertEquals(Actual, Expected, "If ths fails, this message will prompt");
 		
 	}
 
-	public void Naigate_to_URL(WebDriver driver_instance, String URL){
+	public void Navigate_to_URL(WebDriver driver_instance, String URL){
 		driver_instance.get(URL);
 	}
 	
@@ -30,7 +30,7 @@ public class Utilities {
 		driver_instance.findElement(ele).sendKeys(Text);
 	}
 	
-	public void Enter_key_Press(WebDriver driver_instance,By ele){
+	public void Enter_key_Press(WebDriver driver_instance, By ele){
 		driver_instance.findElement(ele).sendKeys(Keys.ENTER);
 	}
 	

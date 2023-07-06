@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="URL" value="https://www.google.co.in/"/>
-  <parameter name="Browser" value="FF"/>
-  <test name="Test3">
-    <parameter name="Browser" value="FF"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="URL" value="https://www.google.co.in/"/>
+    <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.automate.withMe.Test_google"/>
+      <class name="com.automate.withMe.Test_google">
+        <methods>
+          <include name="afterTest"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.automate.withMe.Test_google -->
     </classes>
-  </test> <!-- Test3 -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

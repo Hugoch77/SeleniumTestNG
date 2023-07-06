@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16041" started-at="2020-09-20T07:16:10Z" finished-at="2020-09-20T07:16:26Z">
+  <suite started-at="2023-07-06T02:53:20Z" name="Suite" finished-at="2023-07-06T02:53:22Z" duration-ms="1945">
     <groups>
     </groups>
-    <test name="Test3" duration-ms="16041" started-at="2020-09-20T07:16:10Z" finished-at="2020-09-20T07:16:26Z">
+    <test started-at="2023-07-06T02:53:20Z" name="Test1" finished-at="2023-07-06T02:53:22Z" duration-ms="1945">
       <class name="com.automate.withMe.Test_google">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.automate.withMe.Test_google@1d251891]" name="beforeTest" is-config="true" duration-ms="10123" started-at="2020-09-20T12:46:10Z" finished-at="2020-09-20T12:46:20Z">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.automate.withMe.Test_google@7b94089b]" started-at="2023-07-06T02:53:20Z" name="beforeTest" finished-at="2023-07-06T02:53:21Z" duration-ms="919" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FF]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f(java.lang.String)[pri:0, instance:com.automate.withMe.Test_google@1d251891]" name="f" duration-ms="2476" started-at="2020-09-20T12:46:20Z" finished-at="2020-09-20T12:46:22Z">
+        <test-method signature="f(java.lang.String)[pri:0, instance:com.automate.withMe.Test_google@7b94089b]" started-at="2023-07-06T02:53:21Z" name="f" finished-at="2023-07-06T02:53:22Z" duration-ms="845" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,11 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.automate.withMe.Test_google@1d251891]" name="afterTest" is-config="true" duration-ms="3425" started-at="2020-09-20T12:46:22Z" finished-at="2020-09-20T12:46:26Z">
+        <test-method is-config="true" signature="afterTest(java.lang.String)[pri:0, instance:com.automate.withMe.Test_google@7b94089b]" started-at="2023-07-06T02:53:22Z" name="afterTest" finished-at="2023-07-06T02:53:22Z" duration-ms="171" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FF]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
@@ -41,6 +41,6 @@
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.automate.withMe.Test_google -->
-    </test> <!-- Test3 -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>
